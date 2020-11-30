@@ -190,7 +190,7 @@ def splitFont(
         # turn off all bits except for bit 7 (USE_TYPO_METRICS)
         fs_selection &= 1 << 7
 
-        if instance == "Italic":
+        if "Italic" in instance:
             
             monoFont["head"].macStyle = 0b10
             # In the OS/2 table Panose bProportion must be set to 11 for "oblique boxed" (this is partially a guess)
@@ -199,14 +199,14 @@ def splitFont(
             # set Italic bit
             fs_selection |= 1 << 0
 
-        if instance == "Bold":
+        if "Bold" in instance:
             monoFont['OS/2'].fsSelection = 0b100000
             monoFont["head"].macStyle = 0b1
 
             # set Bold bit
             fs_selection |= 1 << 5
 
-        if instance == "Bold Italic":
+        if "Bold Italic" in instance:
             monoFont['OS/2'].fsSelection = 0b100001
             monoFont["head"].macStyle = 0b11
 
