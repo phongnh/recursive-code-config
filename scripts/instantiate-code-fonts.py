@@ -23,6 +23,8 @@ from mergePowerlineFont import mergePowerlineFont
 # UPDATE FOR NEWER SOURCE VF
 fontPath = "./font-data/Recursive_VF_1.066.ttf"
 
+fontVersion = "1.066"
+
 # prevents over-active warning logs
 logging.getLogger("opentype_feature_freezer").setLevel(logging.ERROR)
 
@@ -132,6 +134,8 @@ def splitFont(
         newFileName = fontFileName\
             .replace(oldName, (newName + fontOptions['Family Name']).replace(" ", ""))\
             .replace("_VF_", "-" + instance.replace(" ", "") + "-")
+
+        newFileName = newFileName.replace("-" + fontVersion, "")
 
         # make dir for new fonts
         pathlib.Path(outputSubDir).mkdir(parents=True, exist_ok=True)
