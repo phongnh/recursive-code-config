@@ -165,6 +165,20 @@ def splitFont(
             instanceFont['OS/2'].fsSelection = 0b100001
             instanceFont["head"].macStyle = 0b11
 
+        if "Italic" in instance:
+            instanceFont['OS/2'].fsSelection = 0b1
+            instanceFont["head"].macStyle = 0b10
+            # In the OS/2 table Panose bProportion must be set to 11 for "oblique boxed" (this is partially a guess)
+            instanceFont["OS/2"].panose.bLetterForm = 11
+
+        if "Bold" in instance:
+            instanceFont['OS/2'].fsSelection = 0b100000
+            instanceFont["head"].macStyle = 0b1
+
+        if "Bold Italic" in instance:
+            instanceFont['OS/2'].fsSelection = 0b100001
+            instanceFont["head"].macStyle = 0b11
+
         # -------------------------------------------------------
         # save instance font
 
