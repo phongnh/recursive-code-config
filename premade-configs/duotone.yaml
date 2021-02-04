@@ -5,30 +5,6 @@
 Family Name: Duotone 
 
 Fonts:
-  Light:
-    MONO: 1
-    CASL: 0
-    wght: 300
-    slnt: 0
-    CRSV: 0
-  Light Italic:
-    MONO: 1
-    CASL: 1
-    wght: 300
-    slnt: -10
-    CRSV: 1
-  Lighter:
-    MONO: 1
-    CASL: 0
-    wght: 350
-    slnt: 0
-    CRSV: 0
-  Lighter Italic:
-    MONO: 1
-    CASL: 1
-    wght: 350
-    slnt: -10
-    CRSV: 1
   Regular:
     MONO: 1
     CASL: 0
