@@ -1,88 +1,95 @@
-# Configuration for Rec Mono Duotone
+# Configuration for Rec Mono SemiCasual
 # Here as an example, or to tweak & use if you wish to
 # See README for details.
 
-Family Name: Duotone 
+Family Name: Semicasual
 
 Fonts:
   Light:
     MONO: 1
-    CASL: 0
+    CASL: 0.5
     wght: 300
     slnt: 0
     CRSV: 0
   Light Italic:
     MONO: 1
-    CASL: 1
+    CASL: 0.5
     wght: 300
     slnt: -10
     CRSV: 1
   Lighter:
     MONO: 1
-    CASL: 0
+    CASL: 0.5
     wght: 350
     slnt: 0
     CRSV: 0
   Lighter Italic:
     MONO: 1
-    CASL: 1
+    CASL: 0.5
     wght: 350
     slnt: -10
     CRSV: 1
   Regular:
     MONO: 1
-    CASL: 0
+    CASL: 0.5
     wght: 400
     slnt: 0
     CRSV: 0
   Italic:
     MONO: 1
-    CASL: 1
+    CASL: 0.5
     wght: 400
     slnt: -10
     CRSV: 1
   Medium:
     MONO: 1
-    CASL: 0
+    CASL: 0.5
     wght: 500
     slnt: 0
     CRSV: 0
   Medium Italic:
     MONO: 1
-    CASL: 1
+    CASL: 0.5
     wght: 500
     slnt: -10
     CRSV: 1
   SemiBold:
     MONO: 1
-    CASL: 1
+    CASL: 0.5
     wght: 600
     slnt: 0
     CRSV: 0
   SemiBold Italic:
     MONO: 1
-    CASL: 1
+    CASL: 0.5
     wght: 600
     slnt: -10
     CRSV: 1
   Bold:
     MONO: 1
-    CASL: 1
-    wght: 750
+    CASL: 0.5
+    wght: 700
     slnt: 0
     CRSV: 0
   Bold Italic:
     MONO: 1
-    CASL: 1
-    wght: 750
+    CASL: 0.5
+    wght: 700
     slnt: -10
     CRSV: 1
 
 Code Ligatures: True
 
 Features:
+- ss01 # Single-story a
+- ss02 # Single-story g
 - ss03 # Simplified f
+- ss04 # Simplified i
 - ss05 # Simplified l
+- ss06 # Simplified r
+- ss07 # Simplified italic diagonals
 - ss08 # Serifless L and Z
 - ss09 # Simplified 6 and 9
+- ss10 # Dotted zero
+- ss11 # Simplified 1
 - ss12 # Simplified @
