@@ -9,5 +9,4 @@ __pycache__
 fonts/
 ArrowType-RecMonoCode-*/
 
-fonts-phong*/
-fonts-premade*/
+fonts-*/
