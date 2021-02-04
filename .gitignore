@@ -8,3 +8,6 @@ __pycache__
 *.zip
 fonts/
 ArrowType-RecMonoCode-*/
+
+fonts-phong*/
+fonts-premade*/

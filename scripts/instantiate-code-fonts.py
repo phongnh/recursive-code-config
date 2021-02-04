@@ -83,6 +83,10 @@ def splitFont(
 
     outputSubDir = f"fonts/{outputDirectory}"
 
+    resultDirectory = os.environ.get('FONT_RESULT_DIRECTORY', 'fonts')
+
+    outputSubDir = f"{resultDirectory}/{outputDirectory}"
+
     for instance in fontOptions["Fonts"]:
 
         print("\n--------------------------------------------------------------------------------------\n" + instance)
