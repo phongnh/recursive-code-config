@@ -2,7 +2,7 @@
 # Here as an example, or to tweak & use if you wish to
 # See README for details.
 
-Family Name: Semicasual
+Family Name: Semicasual 
 
 Fonts:
   Regular:
@@ -57,9 +57,4 @@ Fonts:
 Code Ligatures: True
 
 Features:
-- ss03 # Simplified f
-- ss05 # Simplified l
-- ss08 # Serifless L and Z
-- ss09 # Simplified 6 and 9
-- ss11 # Simplified 1
 - ss12 # Simplified @
