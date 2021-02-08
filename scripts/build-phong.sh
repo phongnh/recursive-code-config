@@ -1,14 +1,20 @@
-# !/bin/bash
+#!/usr/bin/env bash
 
 # A basic script to build all custom onfigs in the project for release
 
 set -e
 
-version=1.072
-release=ArrowType-RecMonoCode-Phong-v$version
-
 export FONT_RESULT_DIRECTORY=fonts-phong
 export FONT_CONFIG_DIRECTORY=phong-configs
+
+fontPath=$1
+
+[ -z "$fontPath" ] && fontPath=$(find font-data -name "Recursive*.ttf" -print | tail -1)
+
+version=$(basename $fontPath ".ttf" | cut -d "_" -f3)
+release=ArrowType-RecMonoCode-Phong-v$version
+
+
 
 rm -rf ./${FONT_RESULT_DIRECTORY}
 
